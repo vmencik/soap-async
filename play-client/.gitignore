@@ -1,0 +1,19 @@
+# Play / SBT
+logs
+.target/
+target/
+project/project
+project/target
+tmp
+.history
+dist
+/out
+
+# Eclipse
+.cache
+.classpath
+.project
+.scala_dependencies
+.settings
+project/bin/
+bin
