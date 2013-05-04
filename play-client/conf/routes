@@ -3,7 +3,6 @@
 # ~~~~
 
 GET		/add						controllers.AsyncSoapController.add(a: Int, b: Int)
-GET		/test						controllers.TestController.test(u: String, p: String)
 
 
 # Map static resources from the /public folder to the /assets URL path
