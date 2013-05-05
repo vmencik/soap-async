@@ -50,6 +50,11 @@ object AsyncSoapController extends Controller {
 
 object JaxwsAsyncAdapter {
 
+  /**
+   * Returns a Future containing a result of an asynchronous JAX-WS proxy method invocation.
+   * @param invoker function that invokes a JAX-WS proxy method with the specified AsyncHandler
+   * @return Future containing the eventual result of JAX-WS proxy method invocation
+   */
   def invoke[A](invoker: AsyncHandler[A] => Unit): Future[A] = {
     val promise = Promise[A]()
     val handler = new AsyncHandler[A] {

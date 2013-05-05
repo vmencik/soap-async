@@ -2,7 +2,7 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
-GET		/add						controllers.AsyncSoapController.add(a: Int, b: Int)
+GET     /add                        controllers.AsyncSoapController.add(a: Int, b: Int)
 
 
 # Map static resources from the /public folder to the /assets URL path

@@ -9,7 +9,7 @@ object ApplicationBuild extends Build {
 
   val appDependencies = Seq(
     "org.apache.cxf" % "cxf-rt-frontend-jaxws" % "2.7.4",
-	"org.apache.cxf" % "cxf-rt-transports-http-hc" % "2.7.4"
+    "org.apache.cxf" % "cxf-rt-transports-http-hc" % "2.7.4"
   )
 
 
