@@ -1,5 +1,7 @@
 Non-blocking SOAP client using Scala, Play and CXF
 ==================================================
+You can read more about this problem in a blog post at [czechscala.com](http://czechscala.com/2013/05/13/non-blocking-soap-web-services-invocation/) (in English)
+or at [dev.etnetera.cz](http://dev.etnetera.cz/cz/scala/neblokujici_volani_soap_webovych_sluzeb.html) (in Czech).
 
 ws-server
 ---------
