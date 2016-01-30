@@ -11,3 +11,6 @@ target/
 .scala_dependencies
 .settings
 .target/
+
+#Idea
+.idea/

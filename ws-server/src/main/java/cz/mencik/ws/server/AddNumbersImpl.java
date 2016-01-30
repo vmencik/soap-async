@@ -24,8 +24,9 @@ public class AddNumbersImpl {
 		String url = args.length > 0 ? args[0] : "http://localhost:8080/ws-server/AddNumbers";
 		Endpoint ep = Endpoint.publish(url, new AddNumbersImpl());
 		System.out.println("Web service endpoint published at: " + url);
-		System.out.println("Press Enter key to stop the web service endpoint");
+		System.out.println("Press any key to stop the web service endpoint");
 		System.in.read();
+        System.out.println("Web service endpoint stopped");
 		ep.stop();
 	}
 }
