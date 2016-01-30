@@ -1,6 +1,6 @@
 Non-blocking SOAP client using Scala, Play and CXF
 ==================================================
-You can read more about this problem in a blog post at [czechscala.com](http://czechscala.com/2013/05/13/non-blocking-soap-web-services-invocation/) (in English)
+You can read more about this problem in a blog post at [czechscala.com via web.archive.org](http://web.archive.org/web/20141026094403/http://czechscala.wordpress.com/2013/05/13/non-blocking-soap-web-services-invocation) (in English)
 or at [dev.etnetera.cz](http://dev.etnetera.cz/cz/scala/neblokujici_volani_soap_webovych_sluzeb.html) (in Czech).
 
 ws-server
@@ -23,3 +23,9 @@ Without CXF in classpath, the code will still work, but JAXWS will revert to the
 The client expects the web service to be running at: [http://localhost:8080/ws-server/AddNumbers](http://localhost:8080/ws-server/AddNumbers).
 
 See [play-client/app/controllers/AsyncSoapController.scala](/play-client/app/controllers/AsyncSoapController.scala) for the details.
+
+Start Play server in dev mode:
+
+	> sbt run
+
+The Play's default HTTP port is 9000 so to access the controller just point your browser to [http://localhost:9000/add?a=10&b=50](http://localhost:9000/add?a=10&b=50) (for sum of 10 + 50).
