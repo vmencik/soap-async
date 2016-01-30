@@ -15,13 +15,10 @@ import play.api.mvc._
 
 object AsyncSoapController extends Controller {
 
-  def add(a: Int, b: Int) = Action {
-    AsyncResult {
-      addUsingWebService(a, b) map {
-        case Right(sum) => Ok(s"And the sum is: $sum")
-        case Left(errMsg) => InternalServerError(s"Ooops, $errMsg")
-      }
-
+  def add(a: Int, b: Int) = Action.async {
+    addUsingWebService(a, b) map {
+      case Right(sum) => Ok(s"And the sum is: $sum")
+      case Left(errMsg) => InternalServerError(s"Ooops, $errMsg")
     }
   }
 

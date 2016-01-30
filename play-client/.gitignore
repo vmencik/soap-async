@@ -17,3 +17,7 @@ dist
 .settings
 project/bin/
 bin
+
+#Idea
+.idea/
+
